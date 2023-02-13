@@ -28,14 +28,14 @@
 sum_func:
 
     LDR R2, addr_lr_bu_2
-    STR lr,[R2] @ Mem[addr_lr_bu_2] <- LR
+    STR lr,[R2]
 
     ADD R0, R0, R1
 
     LDR lr, addr_lr_bu_2
-    LDR lr, [lr] @ LR <- Mem[addr_lr_bu_2]
-    BX lr
+    LDR lr, [lr]
 
+    BX lr
 
 addr_lr_bu_2: .word lr_bu_2
 
@@ -44,7 +44,7 @@ addr_lr_bu_2: .word lr_bu_2
 main:
     
     LDR R1, addr_lr_bu
-    STR lr, [R1] @ Mem[addr_lr_bu] <- LR
+    STR lr, [R1]
     
     LDR R0, addr_get_num_1
     BL printf
