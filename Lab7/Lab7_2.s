@@ -1,9 +1,9 @@
     .data
     .balign 4
-fifteen: .word 15
+fifteen: .word 0
 
     .balign 4
-thirty: .word
+thirty: .word 0
 
     .text
     .global main
@@ -24,4 +24,4 @@ end:
     BX LR
 
 addr_fifteen: .word fifteen
-addr_thirty: .word thirtys
+addr_thirty: .word thirty
