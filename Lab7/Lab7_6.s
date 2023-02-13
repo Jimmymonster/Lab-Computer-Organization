@@ -1,13 +1,13 @@
     .data
 
     .balign 4
-    get_num_1: .asciz ”Number 1 :\n”
+    get_num_1: .asciz "Number 1 :\n"
 
     .balign 4
-    get_num_2: .asciz ”Number 2 :\n”
+    get_num_2: .asciz "Number 2 :\n"
 
     .balign 4
-    pattern: .asciz ”%d”
+    pattern: .asciz "%d"
 
     .balign 4
     num_1: .word 0
@@ -16,7 +16,7 @@
     num_2: .word 0
 
     .balign 4
-    output: .asciz ”Resulf of %d + %d = %d\n”
+    output: .asciz "Resulf of %d + %d = %d\n"
 
     .balign 4
     lr_bu: .word 0
