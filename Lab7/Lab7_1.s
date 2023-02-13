@@ -17,4 +17,4 @@ end:
     BX LR
 
 addr_fifteen: .word fifteen
-addr_thirty: .word thirtys
+addr_thirty: .word thirty
