@@ -9,6 +9,13 @@ thirty: .word
     .global main
 main:
     LDR R1, addr_fifteen
+    MOV R3, #15
+    STR R3, [R1]
+    LDR R2, addr_thirty
+    MOV R3, #30
+    STR R3, [R2]
+
+    LDR R1, addr_fifteen
     LDR R1, [R1]
     LDR R2, addr_thirty
     LDR R2, [R2]
